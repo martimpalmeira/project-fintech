@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar registro</title>
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+    <header>
+        <nav>
+          <a href="../../index.html" class="logo"><span class="black">Fin</span>Tech</a>
+          <img class="profile-pic" src="../../assets/img/profile-pic.svg" alt="">
+          <ul>
+            <li><a href="./cadastrar.html"><img class="edit-icon" src="../img/more.png" alt=""> Cadastrar registro</a></li>
+            <li><a href="./editar.html"><img class="edit-icon" src="../img/editar.png" alt=""> Editar registro</a></li>
+            <li><a href="./login.html"><img class="edit-icon" src="../img/sair.png" alt="">Logout</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section>
+            <h2 id="cadastrar">Cadastrar registro</h2>
+            <form>
+                <div>
+                    <label for="">Nome do registro:</label>
+                    <input type="text">
+                </div>
+                
+                <div>
+                    <label for="">Valor da transação:</label>
+                    <input type="number">
+                </div>
+
+                <div>
+                    <label for="">Tipo de operação:</label>
+                    <input type="text">
+                </div>
+
+                <button class="cadastrar-btn">Cadastrar registro</button>
+            </form>
+        </section>
+      </main>
+
+      <script>
+        const btn = document.querySelector('.cadastrar-btn');
+ 
+        btn.addEventListener('click', ()=>{
+         event.preventDefault();
+         location.href = '../../index.html';
+        })
+     </script>
+</body>
+</html>

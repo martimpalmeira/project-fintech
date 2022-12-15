@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+</head>
+<body>
+    <section>
+        <form>
+            <h1>Olá!</h1>
+            <p class="welcome-text">Bem-vindo de volta, entre na sua conta</p>
+
+            <label for="email"></label>
+            <input type="email" id="email" placeholder="Email">
+
+            <label for=""></label>
+            <input type="password" id="password" placeholder="Senha">
+            <a href="#" class="forgot-password-txt">Esqueceu a senha?</a>
+
+            <button class="login-btn">Entrar</button>
+            <p class="center-text">Não tem uma conta? <a href="#">Criar conta</a></p>
+
+        </form>
+    </section>
+
+    <script>
+       const btn = document.querySelector('.login-btn');
+
+       btn.addEventListener('click', ()=>{
+        event.preventDefault();
+        location.href = '../../index.html';
+       })
+    </script>
+</body>
+</html>
